@@ -1,0 +1,46 @@
+{
+  "name": "villa-madera",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "build:client": "vite build",
+    "preview": "vite preview --port 4173",
+    "images": "node scripts/build-images.mjs",
+    "brand": "node scripts/build-brand.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "check:data": "tsx scripts/check-data.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/hanken-grotesk": "^5.3.0",
+    "@fontsource/marcellus": "^5.3.0",
+    "lucide-react": "^0.462.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@types/node": "^22.20.5",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react-swc": "^3.11.0",
+    "autoprefixer": "^10.6.1",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.26",
+    "globals": "^17.13.0",
+    "postcss": "^8.5.29",
+    "prettier": "^3.9.9",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^3.4.19",
+    "tsx": "^4.23.15",
+    "typescript": "5.8",
+    "typescript-eslint": "^8.71.1",
+    "vite": "^5.4.21"
+  }
+}

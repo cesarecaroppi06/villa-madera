@@ -23,38 +23,92 @@
       "id": "camera-1",
       "nome": "Camera da letto 1",
       "letto": "1 letto matrimoniale",
-      "note": ["bagno privato", "balcone"],
-      "dotazioni": ["Aria condizionata", "Riscaldamento", "Biancheria da letto", "Cuscini e coperte aggiuntivi", "Ferro da stiro", "Grucce", "Spazio per conservare l'abbigliamento"]
+      "note": [
+        "bagno privato",
+        "balcone"
+      ],
+      "dotazioni": [
+        "Aria condizionata",
+        "Riscaldamento",
+        "Biancheria da letto",
+        "Cuscini e coperte aggiuntivi",
+        "Ferro da stiro",
+        "Grucce",
+        "Spazio per conservare l'abbigliamento"
+      ]
     },
     {
       "id": "camera-2",
       "nome": "Camera da letto 2",
       "letto": "1 letto matrimoniale",
       "note": [],
-      "dotazioni": ["Aria condizionata", "Riscaldamento", "Biancheria da letto", "Ferro da stiro", "Grucce", "Spazio per conservare l'abbigliamento"]
+      "dotazioni": [
+        "Aria condizionata",
+        "Riscaldamento",
+        "Biancheria da letto",
+        "Ferro da stiro",
+        "Grucce",
+        "Spazio per conservare l'abbigliamento"
+      ]
     },
     {
       "id": "camera-3",
       "nome": "Camera da letto 3",
       "letto": "1 letto a una piazza e mezza (utilizzabile anche da due bambini o ragazzi)",
-      "note": ["comunicante con il giardino", "postazione di lavoro"],
-      "dotazioni": ["Riscaldamento", "Biancheria da letto", "Cuscini e coperte aggiuntivi", "Ferro da stiro", "Grucce", "Spazio per conservare l'abbigliamento"]
+      "note": [
+        "comunicante con il giardino",
+        "postazione di lavoro"
+      ],
+      "dotazioni": [
+        "Riscaldamento",
+        "Biancheria da letto",
+        "Cuscini e coperte aggiuntivi",
+        "Ferro da stiro",
+        "Grucce",
+        "Spazio per conservare l'abbigliamento"
+      ]
     }
   ],
   "bagni": {
     "numero": 2,
     "nota": "Due bagni con un'unica doccia accessibile da entrambi (privacy garantita, secondo l'annuncio)"
   },
-  "ambienti": ["Giardino a uso esclusivo", "Ingresso", "Soggiorno con cucina", "3 camere da letto", "2 bagni", "Lavanderia"],
+  "ambienti": [
+    "Giardino a uso esclusivo",
+    "Ingresso",
+    "Soggiorno con cucina",
+    "3 camere da letto",
+    "2 bagni",
+    "Lavanderia"
+  ],
   "esterni": {
     "giardino": "A uso esclusivo degli ospiti e dei loro animali",
-    "arredi": ["Tavolo per 8", "Sedie", "2 sdraio", "Salottino"],
+    "arredi": [
+      "Tavolo per 8",
+      "Sedie",
+      "2 sdraio",
+      "Salottino"
+    ],
     "notaGazebo": "Il gazebo non è citato nel testo dell'annuncio ma è visibile nelle foto 18, 20 e 21"
   },
   "cucina": {
-    "dotazioni": ["Piano cottura a gas", "Forno elettrico", "Lavastoviglie", "Microonde", "Tostapane", "Macchina del caffè", "TV", "Stoviglie", "Calici da vino"]
+    "dotazioni": [
+      "Piano cottura a gas",
+      "Forno elettrico",
+      "Lavastoviglie",
+      "Microonde",
+      "Tostapane",
+      "Macchina del caffè",
+      "TV",
+      "Stoviglie",
+      "Calici da vino"
+    ]
   },
-  "lavanderia": ["Lavatrice", "Asse da stiro", "Prodotti per la pulizia"],
+  "lavanderia": [
+    "Lavatrice",
+    "Asse da stiro",
+    "Prodotti per la pulizia"
+  ],
   "particolarita": [
     "Soffitti alti 3,60 m",
     "Quartiere residenziale di ville storiche e piccoli condomini, nel verde",
@@ -68,9 +122,13 @@
     "parcheggio": "Libero, davanti e di fianco alla casa",
     "ztl": false,
     "traffico": "Libero a qualsiasi ora, salvo eventi particolari (maratona, corse ciclistiche)",
-    "coordinateAirbnb": { "lat": 43.18558, "lng": 13.79606, "nota": "Offuscate da Airbnb: non usarle come indirizzo" },
+    "coordinateAirbnb": {
+      "lat": 43.18558,
+      "lng": 13.79606,
+      "nota": "Offuscate da Airbnb: non usarle come indirizzo"
+    },
     "indirizzo": "Viale della Vittoria 199, 63822 Porto San Giorgio (FM)",
-    "indirizzoNota": "Fornito dall'host l'8 ottobre 2026 come indirizzo del titolare; pubblicazione autorizzata. Da confermare che coincida con l'indirizzo dell'alloggio. CAP 63822 da verificare."
+    "indirizzoNota": "Indirizzo dell'alloggio, confermato dall'host l'8 ottobre 2026; pubblicazione autorizzata."
   },
   "daSapere": {
     "ferrovia": "La ferrovia passa vicino alla casa; gli infissi garantiscono un buon isolamento acustico",
@@ -80,8 +138,18 @@
     "media": 4.94,
     "recensioni": 17,
     "badge": "Amato dagli ospiti",
-    "dettaglio": { "pulizia": 5.0, "precisione": 5.0, "checkIn": 5.0, "comunicazione": 5.0, "posizione": 4.9, "qualitaPrezzo": 4.9 },
-    "distribuzione": { "5": "94%", "4": "6%" },
+    "dettaglio": {
+      "pulizia": 5.0,
+      "precisione": 5.0,
+      "checkIn": 5.0,
+      "comunicazione": 5.0,
+      "posizione": 4.9,
+      "qualitaPrezzo": 4.9
+    },
+    "distribuzione": {
+      "5": "94%",
+      "4": "6%"
+    },
     "rilevataIl": "2026-10-08"
   },
   "host": {
@@ -92,9 +160,16 @@
     "valutazioneMediaHost": 4.95,
     "tassoRisposta": "100%",
     "tempoRisposta": "Entro un'ora",
-    "lingue": ["italiano", "inglese"],
+    "lingue": [
+      "italiano",
+      "inglese"
+    ],
     "linguePerFonte": "Confermate dall'host l'8 ottobre 2026",
-    "datiPersonaliAnnuncio": { "studi": "Milano", "lavoro": "Insegnante liceale", "pubblicabili": false }
+    "datiPersonaliAnnuncio": {
+      "studi": "Milano",
+      "lavoro": "Insegnante liceale",
+      "pubblicabili": false
+    }
   },
   "regole": {
     "checkIn": "Flessibile; self check-in con smart lock a qualsiasi ora previo accordo",
@@ -105,7 +180,11 @@
     "festeEventi": false,
     "fumo": false,
     "fotografiaPubblicitaria": false,
-    "primaDellaPartenza": ["Buttare la spazzatura", "Spegnere tutto", "Restituire le chiavi"]
+    "primaDellaPartenza": [
+      "Buttare la spazzatura",
+      "Spegnere tutto",
+      "Restituire le chiavi"
+    ]
   },
   "sicurezza": {
     "rilevatoreMonossido": true,
@@ -119,18 +198,100 @@
     "conteggioVoci": 37,
     "notaConteggio": "Le voci disponibili elencate sono 37; Airbnb ne dichiara 38 (probabilmente conta 'Smart Lock' a parte)",
     "categorie": [
-      { "nome": "Vista", "voci": ["Vista sul giardino"] },
-      { "nome": "Camera da letto e lavanderia", "voci": ["Lavatrice", "Servizi di base (asciugamani, lenzuola, sapone e carta igienica)", "Grucce", "Biancheria da letto", "Cuscini e coperte aggiuntivi", "Ferro da stiro", "Spazio per conservare l'abbigliamento"] },
-      { "nome": "Intrattenimento", "voci": ["TV", "Libri e materiale di lettura"] },
-      { "nome": "Riscaldamento e climatizzazione", "voci": ["Aria condizionata", "Riscaldamento"] },
-      { "nome": "Sicurezza domestica", "voci": ["Rilevatore di monossido di carbonio", "Estintore", "Kit di primo soccorso"] },
-      { "nome": "Internet e ufficio", "voci": ["Wifi", "Spazio di lavoro dedicato"] },
-      { "nome": "Cucina e zona pranzo", "voci": ["Cucina", "Frigorifero", "Forno a microonde", "Servizi di base per cucinare (pentole, padelle, olio, sale e pepe)", "Piatti e posate", "Congelatore", "Lavastoviglie", "Fornello", "Forno", "Macchina per il caffè", "Calici da vino", "Tostapane", "Teglia da forno", "Frullatore", "Caffè"] },
-      { "nome": "Caratteristiche dell'alloggio", "voci": ["Accesso alla spiaggia", "Ingresso privato"] },
-      { "nome": "All'aperto", "voci": ["Zona pranzo all'aperto"] },
-      { "nome": "Servizi", "voci": ["Animali domestici ammessi", "Self check-in con smart lock"] }
+      {
+        "nome": "Vista",
+        "voci": [
+          "Vista sul giardino"
+        ]
+      },
+      {
+        "nome": "Camera da letto e lavanderia",
+        "voci": [
+          "Lavatrice",
+          "Servizi di base (asciugamani, lenzuola, sapone e carta igienica)",
+          "Grucce",
+          "Biancheria da letto",
+          "Cuscini e coperte aggiuntivi",
+          "Ferro da stiro",
+          "Spazio per conservare l'abbigliamento"
+        ]
+      },
+      {
+        "nome": "Intrattenimento",
+        "voci": [
+          "TV",
+          "Libri e materiale di lettura"
+        ]
+      },
+      {
+        "nome": "Riscaldamento e climatizzazione",
+        "voci": [
+          "Aria condizionata",
+          "Riscaldamento"
+        ]
+      },
+      {
+        "nome": "Sicurezza domestica",
+        "voci": [
+          "Rilevatore di monossido di carbonio",
+          "Estintore",
+          "Kit di primo soccorso"
+        ]
+      },
+      {
+        "nome": "Internet e ufficio",
+        "voci": [
+          "Wifi",
+          "Spazio di lavoro dedicato"
+        ]
+      },
+      {
+        "nome": "Cucina e zona pranzo",
+        "voci": [
+          "Cucina",
+          "Frigorifero",
+          "Forno a microonde",
+          "Servizi di base per cucinare (pentole, padelle, olio, sale e pepe)",
+          "Piatti e posate",
+          "Congelatore",
+          "Lavastoviglie",
+          "Fornello",
+          "Forno",
+          "Macchina per il caffè",
+          "Calici da vino",
+          "Tostapane",
+          "Teglia da forno",
+          "Frullatore",
+          "Caffè"
+        ]
+      },
+      {
+        "nome": "Caratteristiche dell'alloggio",
+        "voci": [
+          "Accesso alla spiaggia",
+          "Ingresso privato"
+        ]
+      },
+      {
+        "nome": "All'aperto",
+        "voci": [
+          "Zona pranzo all'aperto"
+        ]
+      },
+      {
+        "nome": "Servizi",
+        "voci": [
+          "Animali domestici ammessi",
+          "Self check-in con smart lock"
+        ]
+      }
     ],
-    "nonDisponibili": ["Telecamere di sorveglianza esterne", "Asciugatrice", "Allarme antincendio", "Acqua calda"],
-    "notaNonDisponibili": "Asciugatrice e allarme antincendio confermati assenti dall'host. 'Acqua calda' è segnata come non disponibile nella scheda: quasi certamente una svista, ma non confermata (TODO). Una recensione cita una lavasciuga: l'host dice che non c'è asciugatrice, quindi sul sito si parla solo di lavatrice."
+    "nonDisponibili": [
+      "Telecamere di sorveglianza esterne",
+      "Asciugatrice",
+      "Allarme antincendio",
+      "Acqua calda"
+    ],
+    "notaNonDisponibili": "Asciugatrice e allarme antincendio confermati assenti dall'host. 'Acqua calda' come non disponibile è un errore della scheda Airbnb (confermato dall'host): l'acqua calda c'è. Una recensione cita una lavasciuga: l'host conferma che non c'è asciugatrice, quindi sul sito si parla solo di lavatrice."
   }
 }

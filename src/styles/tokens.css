@@ -1,0 +1,56 @@
+/*
+ * Token del sistema di design di Villa Madera.
+ * Ogni colore viene dalle foto della casa (campioni in docs/piano.md e su /styleguide).
+ */
+:root {
+  /* Colori */
+  --bianco-infisso: #faf8f4; /* porte e infissi: fondo della pagina */
+  --lino: #ece8df; /* tende, intonaco chiaro: superfici alternate */
+  --tortora: #8c867a; /* pareti interne: bordi dei campi, testo solo sopra i 24 px */
+  --tortora-profondo: #5f594c; /* ombre delle pareti: testo secondario, fasce scure */
+  --inchiostro: #25221b; /* ferro battuto: testo principale */
+  --verde-persiana: #2f4236; /* persiane e cancello: unico colore d'azione */
+  --verde-persiana-scuro: #243329; /* stato :hover del pulsante primario */
+  --rovere: #a98a5c; /* parquet: filetti, icone. Mai per il testo */
+  --mattone: #8e462f; /* pilastri del cancello: voce attiva, errori */
+
+  /* Tipografia */
+  --font-display: 'Marcellus', 'Times New Roman', serif;
+  --font-sans: 'Hanken Grotesk Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  /* Scala 1,25 a 360 px, 1,333 da 1024 px; il corpo resta 17 px */
+  --step--1: 0.875rem;
+  --step-0: 1.0625rem;
+  --step-1: clamp(1.328rem, 1.22rem + 0.45vw, 1.416rem);
+  --step-2: clamp(1.66rem, 1.45rem + 0.9vw, 1.888rem);
+  --step-3: clamp(2.075rem, 1.7rem + 1.6vw, 2.517rem);
+  --step-4: clamp(2.594rem, 2rem + 2.6vw, 3.356rem);
+  --step-display: clamp(2.75rem, 6vw, 5.25rem);
+  --leading-body: 1.65;
+  --leading-title: 1.1;
+
+  /* Spazi e griglia (base 8 px) */
+  --container: 77.5rem; /* 1240 px */
+  --gutter: 1rem;
+  --section: clamp(4.5rem, 10vw, 9rem);
+  --radius: 2px;
+  --nav-h: 72px;
+  --nav-h-compact: 56px;
+
+  /* Movimento */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-ui: 200ms;
+  --dur-img: 700ms;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-ui: 150ms;
+    --dur-img: 150ms;
+  }
+}

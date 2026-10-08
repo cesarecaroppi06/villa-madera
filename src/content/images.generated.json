@@ -1,0 +1,640 @@
+[
+  {
+    "id": 1,
+    "ambiente": "soggiorno",
+    "filtro": "soggiorno",
+    "width": 2560,
+    "height": 1920,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#888175",
+    "focal": "60% 55%",
+    "alt": {
+      "it": "Soggiorno con divano grigio, credenza bianca e pareti tortora decorate",
+      "en": "Living room with a grey sofa, white sideboard and taupe walls with wall art",
+      "de": "Wohnzimmer mit grauem Sofa, weißem Sideboard und taupefarbenen Wänden mit Wanddekor"
+    }
+  },
+  {
+    "id": 2,
+    "ambiente": "cucina",
+    "filtro": "soggiorno",
+    "width": 2560,
+    "height": 1920,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#aaa69d",
+    "focal": "45% 50%",
+    "alt": {
+      "it": "Macchina del caffè a capsule su un vassoio con tazzine bianche",
+      "en": "Capsule coffee machine on a tray with white cups",
+      "de": "Kapselkaffeemaschine auf einem Tablett mit weißen Tassen"
+    }
+  },
+  {
+    "id": 3,
+    "ambiente": "zona-pranzo",
+    "filtro": "soggiorno",
+    "width": 2560,
+    "height": 1920,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#e3ddcd",
+    "focal": "50% 60%",
+    "alt": {
+      "it": "Cucina bianca e tavolo tondo da pranzo davanti a una finestra con tende di lino",
+      "en": "White kitchen and round dining table in front of a window with linen curtains",
+      "de": "Weiße Küche und runder Esstisch vor einem Fenster mit Leinenvorhängen"
+    }
+  },
+  {
+    "id": 4,
+    "ambiente": "camera-1",
+    "filtro": "camere",
+    "width": 2560,
+    "height": 1920,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#665f52",
+    "focal": "50% 60%",
+    "alt": {
+      "it": "Camera matrimoniale con quadri botanici e plaid verde salvia",
+      "en": "Double bedroom with botanical prints and a sage green throw",
+      "de": "Doppelzimmer mit botanischen Bildern und salbeigrüner Decke"
+    }
+  },
+  {
+    "id": 5,
+    "ambiente": "camera-1",
+    "filtro": "camere",
+    "width": 2560,
+    "height": 1920,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#887c6d",
+    "focal": "55% 50%",
+    "alt": {
+      "it": "Cassettiera bianca in camera e scorcio sul bagno privato con cementine",
+      "en": "White chest of drawers and a glimpse of the en-suite bathroom with patterned tiles",
+      "de": "Weiße Kommode und Blick ins eigene Bad mit Zementfliesen"
+    }
+  },
+  {
+    "id": 6,
+    "ambiente": "camera-1",
+    "filtro": "camere",
+    "width": 2560,
+    "height": 1920,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#737271",
+    "focal": "45% 50%",
+    "alt": {
+      "it": "Portafinestra sul balcone e armadio a specchio nella camera principale",
+      "en": "French window onto the balcony and mirrored wardrobe in the main bedroom",
+      "de": "Balkontür und Spiegelschrank im Hauptschlafzimmer"
+    }
+  },
+  {
+    "id": 7,
+    "ambiente": "camera-2",
+    "filtro": "camere",
+    "width": 2560,
+    "height": 1920,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#87846c",
+    "focal": "40% 60%",
+    "alt": {
+      "it": "Seconda camera matrimoniale con armadiatura bianca a ponte",
+      "en": "Second double bedroom with a white overhead wardrobe unit",
+      "de": "Zweites Doppelzimmer mit weißem Überbauschrank"
+    }
+  },
+  {
+    "id": 8,
+    "ambiente": "camera-3",
+    "filtro": "camere",
+    "width": 2560,
+    "height": 1920,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#cdd0c6",
+    "focal": "55% 65%",
+    "alt": {
+      "it": "Camera con letto a una piazza e mezza e copriletto a righe",
+      "en": "Bedroom with a three-quarter bed and striped bedspread",
+      "de": "Zimmer mit 1,40-m-Bett und gestreifter Tagesdecke"
+    }
+  },
+  {
+    "id": 9,
+    "ambiente": "camera-3",
+    "filtro": "camere",
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#c6c4b4",
+    "focal": "45% 55%",
+    "alt": {
+      "it": "Scrivania con lampada e sedia bianca, accanto alla finestra",
+      "en": "Desk with lamp and white chair beside the window",
+      "de": "Schreibtisch mit Lampe und weißem Stuhl am Fenster"
+    }
+  },
+  {
+    "id": 10,
+    "ambiente": "camera-3",
+    "filtro": "camere",
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#8c8373",
+    "focal": "50% 50%",
+    "alt": {
+      "it": "Cassettiera bianca con specchio in legno e pila di libri",
+      "en": "White chest of drawers with a wooden mirror and a stack of books",
+      "de": "Weiße Kommode mit Holzspiegel und Bücherstapel"
+    }
+  },
+  {
+    "id": 11,
+    "ambiente": "camera-3",
+    "filtro": "camere",
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#7a715a",
+    "focal": "50% 40%",
+    "alt": {
+      "it": "Camera con portafinestra aperta sul giardino",
+      "en": "Bedroom with a French window open onto the garden",
+      "de": "Zimmer mit Fenstertür zum Garten"
+    }
+  },
+  {
+    "id": 12,
+    "ambiente": "bagno-1",
+    "filtro": "bagni",
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#2c220f",
+    "focal": "50% 50%",
+    "alt": {
+      "it": "Bagno con cementine decorate, termoarredo bianco e doccia in vetro verde acqua",
+      "en": "Bathroom with patterned tiles, white towel radiator and aqua glass shower",
+      "de": "Bad mit gemusterten Fliesen, weißem Handtuchheizkörper und wassergrüner Glasdusche"
+    }
+  },
+  {
+    "id": 13,
+    "ambiente": "bagno-1",
+    "filtro": "bagni",
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#7e7565",
+    "focal": "50% 55%",
+    "alt": {
+      "it": "Scorcio dal corridoio verso il bagno con pavimento a cementine",
+      "en": "View from the hallway into the bathroom with patterned floor tiles",
+      "de": "Blick vom Flur ins Bad mit gemustertem Fliesenboden"
+    }
+  },
+  {
+    "id": 14,
+    "ambiente": "bagno-2",
+    "filtro": "bagni",
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#414039",
+    "focal": "50% 45%",
+    "alt": {
+      "it": "Lavabo sospeso e specchio tondo su parete a cementine grigie",
+      "en": "Wall-hung basin and round mirror against a grey patterned tile wall",
+      "de": "Hängendes Waschbecken und runder Spiegel vor grau gemusterter Fliesenwand"
+    }
+  },
+  {
+    "id": 15,
+    "ambiente": "bagno-2",
+    "filtro": "bagni",
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#5e5949",
+    "focal": "50% 60%",
+    "alt": {
+      "it": "Sanitari sospesi, termoarredo e porta della doccia nel secondo bagno",
+      "en": "Wall-hung toilet and bidet, towel radiator and shower door in the second bathroom",
+      "de": "Hänge-WC und Bidet, Handtuchheizkörper und Duschtür im zweiten Bad"
+    }
+  },
+  {
+    "id": 16,
+    "ambiente": "lavanderia",
+    "filtro": "bagni",
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#554234",
+    "focal": "60% 60%",
+    "alt": {
+      "it": "Lavanderia con lavatrice, scaffali e prodotti per la pulizia",
+      "en": "Laundry room with washing machine, shelves and cleaning supplies",
+      "de": "Waschraum mit Waschmaschine, Regalen und Reinigungsmitteln"
+    }
+  },
+  {
+    "id": 17,
+    "ambiente": "esterni",
+    "filtro": "giardino",
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#cdc1ad",
+    "focal": "42% 45%",
+    "alt": {
+      "it": "Facciata della villa in mattoni con portale ad arco, scalinata bianca e giardino",
+      "en": "The villa's brick façade with arched portal, white steps and garden",
+      "de": "Ziegelfassade der Villa mit Rundbogenportal, weißer Treppe und Garten"
+    }
+  },
+  {
+    "id": 18,
+    "ambiente": "esterni",
+    "filtro": "giardino",
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#292c20",
+    "focal": "50% 45%",
+    "alt": {
+      "it": "Giardino con due sdraio, gazebo e siepe alta",
+      "en": "Garden with two loungers, a gazebo and a tall hedge",
+      "de": "Garten mit zwei Liegen, Pavillon und hoher Hecke"
+    }
+  },
+  {
+    "id": 19,
+    "ambiente": "esterni",
+    "filtro": "giardino",
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#51582f",
+    "focal": "50% 60%",
+    "alt": {
+      "it": "Salottino da esterno in rattan sulla ghiaia, tra le siepi",
+      "en": "Rattan outdoor lounge set on gravel among the hedges",
+      "de": "Rattan-Lounge im Freien auf Kies zwischen Hecken"
+    }
+  },
+  {
+    "id": 20,
+    "ambiente": "esterni",
+    "filtro": "giardino",
+    "width": 2560,
+    "height": 1920,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#665337",
+    "focal": "50% 55%",
+    "alt": {
+      "it": "Tavolo da pranzo sotto il gazebo con tende",
+      "en": "Dining table under the curtained gazebo",
+      "de": "Esstisch unter dem Pavillon mit Vorhängen"
+    }
+  },
+  {
+    "id": 21,
+    "ambiente": "esterni",
+    "filtro": "giardino",
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#50533b",
+    "focal": "50% 50%",
+    "alt": {
+      "it": "Giardino con sdraio, gazebo e piante in fiore",
+      "en": "Garden with loungers, gazebo and flowering plants",
+      "de": "Garten mit Liegen, Pavillon und blühenden Pflanzen"
+    }
+  },
+  {
+    "id": 22,
+    "ambiente": "esterni",
+    "filtro": "giardino",
+    "width": 2560,
+    "height": 1920,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#504d3f",
+    "focal": "70% 45%",
+    "alt": {
+      "it": "Portale ad arco della villa con intradosso rosso scuro e scalinata bianca",
+      "en": "The villa's arched portal with deep red reveal and white steps",
+      "de": "Rundbogenportal der Villa mit dunkelroter Laibung und weißer Treppe"
+    }
+  },
+  {
+    "id": 23,
+    "ambiente": "altre",
+    "filtro": "giardino",
+    "width": 2560,
+    "height": 1920,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#cad0d3",
+    "focal": "60% 55%",
+    "alt": {
+      "it": "Scalinata d'ingresso e giardino fiorito davanti alla villa",
+      "en": "Entrance steps and flowering garden in front of the villa",
+      "de": "Eingangstreppe und blühender Garten vor der Villa"
+    }
+  },
+  {
+    "id": 24,
+    "ambiente": "altre",
+    "filtro": "giardino",
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#2f3327",
+    "focal": "50% 55%",
+    "alt": {
+      "it": "Cancello in ferro battuto verde tra due pilastri in mattoni",
+      "en": "Green wrought-iron gate between two brick pillars",
+      "de": "Grünes schmiedeeisernes Tor zwischen zwei Ziegelpfeilern"
+    }
+  },
+  {
+    "id": 25,
+    "ambiente": "altre",
+    "filtro": "giardino",
+    "width": 2560,
+    "height": 1920,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#4e4b3e",
+    "focal": "50% 55%",
+    "alt": {
+      "it": "Giardino con pini marittimi, gerani e salottino in fondo",
+      "en": "Garden with maritime pines, geraniums and the lounge set beyond",
+      "de": "Garten mit Strandkiefern, Geranien und Lounge im Hintergrund"
+    }
+  },
+  {
+    "id": 26,
+    "ambiente": "altre",
+    "filtro": "soggiorno",
+    "width": 2560,
+    "height": 1920,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#786e63",
+    "focal": "40% 50%",
+    "alt": {
+      "it": "Consolle bianca con specchio e vasi bianchi accanto a una porta vetrata",
+      "en": "White console with mirror and white vases beside a glazed door",
+      "de": "Weiße Konsole mit Spiegel und weißen Vasen neben einer Glastür"
+    }
+  },
+  {
+    "id": 27,
+    "ambiente": "altre",
+    "filtro": "bagni",
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#7f7566",
+    "focal": "50% 50%",
+    "alt": {
+      "it": "Corridoio con scorcio sul bagno e placca in ottone alla parete",
+      "en": "Hallway with a view into the bathroom and a brass plate on the wall",
+      "de": "Flur mit Blick ins Bad und Messingschild an der Wand"
+    }
+  },
+  {
+    "id": 28,
+    "ambiente": "altre",
+    "filtro": "soggiorno",
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#726a59",
+    "focal": "50% 55%",
+    "alt": {
+      "it": "Corridoio con armadio a muro bianco e lampada a sospensione",
+      "en": "Hallway with white built-in wardrobe and pendant lamp",
+      "de": "Flur mit weißem Einbauschrank und Hängelampe"
+    }
+  },
+  {
+    "id": 29,
+    "ambiente": "altre",
+    "filtro": "camere",
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      768,
+      1080,
+      1440,
+      1920
+    ],
+    "fallback": 1080,
+    "color": "#aba89c",
+    "focal": "50% 55%",
+    "alt": {
+      "it": "Cassettiera bianca con specchio, davanti alla finestra",
+      "en": "White chest of drawers with mirror in front of the window",
+      "de": "Weiße Kommode mit Spiegel vor dem Fenster"
+    }
+  }
+]

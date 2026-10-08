@@ -15,19 +15,16 @@ export const site = {
   },
 
   contacts: {
-    // Numero comunicato come «34768 22003»: letto come 347 682 2003.
-    // TODO(host): confermare il numero e che sia attivo anche su WhatsApp.
+    // Confermato dall'host l'8/10/2026, valido anche per WhatsApp.
+    // Nessuna email pubblica: su richiesta dell'host l'indirizzo email non compare sul sito.
     phoneDisplay: '+39 347 682 2003',
     phoneE164: '+393476822003',
     whatsapp: '393476822003',
-    // TODO(host): confermare che questa email possa essere pubblicata come contatto dello sportello.
-    email: 'silviabonfigli@libero.it',
     hours: { from: '08:00', to: '21:00' },
   },
 
   address: {
-    // Pubblicazione autorizzata dall'host.
-    // TODO(host): confermare che coincida con l'indirizzo dell'alloggio e il CAP.
+    // Indirizzo dell'alloggio, pubblicazione autorizzata e confermata dall'host.
     street: 'Viale della Vittoria 199',
     postalCode: '63822',
     city: 'Porto San Giorgio',
@@ -42,7 +39,8 @@ export const site = {
     controller: {
       name: 'Silvia Bonfigli',
       address: 'Viale della Vittoria 199, 63822 Porto San Giorgio (FM)',
-      email: 'silviabonfigli@libero.it',
+      // Contatto per l'esercizio dei diritti: telefono e WhatsApp (nessuna email pubblica).
+      phone: '+39 347 682 2003',
     },
     cin: 'IT109033C2ASAMXFDF',
     policiesUpdated: '2026-10-08',
@@ -58,12 +56,6 @@ export const site = {
     // Nessuna autorizzazione scritta di Airbnb: il logo non compare.
     logoAuthorized: false,
     logoFile: null as string | null,
-  },
-
-  // Cose da non pubblicare finché l'host non le conferma.
-  pending: {
-    // L'annuncio segna «Acqua calda» tra le voci non disponibili: quasi certamente una svista.
-    hotWater: 'TODO(host): confermare la presenza di acqua calda',
   },
 
   // Nessuno strumento non tecnico: il banner cookie non compare.

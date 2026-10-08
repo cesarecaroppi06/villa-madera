@@ -84,47 +84,26 @@ Pipeline:
 - Proporzioni ammesse: 4:5 per le verticali, 3:2 per le orizzontali, più le proporzioni reali in galleria.
 - Nessun ritocco, ingrandimento o generazione con l'IA.
 
-## 5. Stack tecnico
+## 5. Stack tecnico (deciso al checkpoint 1: React per Lovable)
 
-Il brief chiede Astro su Vercel. Tu mi hai indicato «tutto su Lovable, dominio villamadera.com». Le due cose non coincidono, quindi espongo le opzioni e propongo una raccomandazione.
-
-**Cosa vuol dire Lovable.** Un progetto Lovable è un'app React + Vite + Tailwind + shadcn/ui, costruita e pubblicata dalla piattaforma, con un eventuale backend Supabase. Lovable non ospita un progetto Astro e il suo processo di build non è pensato per siti generati staticamente pagina per pagina.
-
-### Opzione A: Astro statico, pubblicato fuori da Lovable (consigliata)
-
-- Astro 5 con TypeScript rigoroso e output interamente statico: 3 lingue × 3 pagine + 404 + styleguide, tutto HTML pronto.
-- Tailwind 4 con i token come variabili CSS; isole in JavaScript nativo per menu, galleria, visore e modulo.
-- Hosting gratuito su Vercel, Netlify o Cloudflare Pages, con `villamadera.com` puntato lì: due record DNS presso il registrar.
-- È l'unica opzione con cui le soglie del brief sono raggiungibili con margine:
-  - JavaScript della home stimato sotto 20 KB;
-  - HTML già pronto per i motori di ricerca in tre lingue;
-  - `hreflang` corretti.
-- Silvia non avrebbe un editor visuale. I dati che cambiano (valutazione, contatti, testi) però stanno in pochi file chiari, documentati nel README.
-
-### Opzione B: progetto Lovable
-
-- Riscrittura nello stack Lovable (React + Vite), con prerendering delle pagine (per esempio `vite-react-ssg`) per non perdere la SEO. Lovable va poi collegato a un repository GitHub e il dominio va collegato dal pannello Lovable (piano a pagamento).
-- Vantaggio: editor visuale e modifiche in linguaggio naturale da Lovable.
-- Svantaggi:
-  - React + router pesano già 50–60 KB compressi, quindi il budget di 80 KB e Lighthouse ≥ 95 diventano al limite;
-  - il prerendering dentro la build di Lovable non è garantito;
-  - ogni modifica fatta in Lovable può rompere le regole del sistema di design.
-
-### Opzione C: ibrido
-
-Il sito si sviluppa in Astro (opzione A) e Lovable si usa solo per registrare e gestire il dominio, se lo hai acquistato lì. Il dominio punta all'hosting statico.
-
-**Raccomandazione: A**, con C se il dominio è già su Lovable. Il sito è una vetrina che cambia raramente: un editor visuale aggiunge poco e costa in prestazioni, in SEO e in coerenza. Se però per te è decisivo che Silvia o tu possiate modificare il sito da Lovable, scegli B: le soglie di prestazione andranno riviste al ribasso e lo dichiarerò nel report.
+- **React 18 + Vite 5 + TypeScript rigoroso + Tailwind 3**, lo stesso stack di un progetto Lovable: Lovable può aprire e modificare il repository, e la sua anteprima (`npm run dev`, porta 8080) mostra il sito completo.
+- **Pagine statiche prerenderizzate.** `npm run build` costruisce il client, poi un bundle server, e `scripts/prerender.mjs` scrive un file HTML completo per ogni pagina e lingua (10 pagine più la 404), insieme a `sitemap.xml` e `robots.txt`. I motori di ricerca e i link condivisi ricevono HTML vero, con `hreflang`, canonical, Open Graph e JSON-LD.
+- **Isole.** Nel sito pubblicato il browser non ri-renderizza la pagina: idrata solo i componenti interattivi (`src/islands.ts`: intestazione, poi galleria, visore e modulo). I testi non finiscono nel JavaScript. Oggi la home carica 52 KB compressi (46,5 di React più 5,6 dell'intestazione).
+- **Ripiego.** Se la piattaforma di pubblicazione esegue solo `vite build` senza prerender, `src/main.tsx` lo rileva e renderizza l'app intera nel browser: il sito funziona lo stesso, ma perde la SEO delle pagine statiche. Va quindi verificato, alla pubblicazione, che Lovable usi `npm run build`.
+- **Immagini.** `npm run images` (sharp) genera AVIF e WebP in 480–1920 px e un JPEG di ripiego a 1080 in `public/img/`, più `src/content/images.generated.json`. I file generati sono nel repository, così la build non dipende da sharp.
+- **Marchio.** `scripts/build_brand.py` produce gli SVG (lettere convertite in tracciati con HarfBuzz e fontTools), mentre `npm run brand` produce le icone raster e l'immagine di condivisione.
+- **Font** serviti dal sito (`public/fonts/`, sottoinsieme latino), con precaricamento del solo Marcellus.
+- Nessuna libreria di animazione: CSS e `IntersectionObserver`.
 
 ## 6. Sportello ospiti e invio delle richieste
 
 Mi hai detto che le richieste devono arrivare al telefono personale di Silvia, e non c'è un account Resend. Propongo quindi un modulo che **non passa da nessun server**:
 
-- L'ospite compila il modulo (nome, email, telefono facoltativo, date, numero di ospiti, animali, messaggio).
+- L'ospite compila il modulo (nome, email facoltativa per una risposta scritta, date, numero di ospiti, animali, messaggio).
 - La validazione è accessibile e i messaggi d'errore sono annunciati agli screen reader.
 - «Invia la richiesta su WhatsApp» apre WhatsApp con un messaggio già composto e ordinato («Richiesta per Villa Madera – arrivo 12/06/2027, partenza 19/06/2027, 4 ospiti, con animali: no…»), indirizzato al numero di Silvia. L'ospite controlla il testo e preme invio.
-- Seconda azione equivalente: «Invia per email» apre il programma di posta con lo stesso testo (`mailto:`), per chi non usa WhatsApp.
-- Stati: verifica dei campi, conferma («Abbiamo preparato il messaggio: invialo da WhatsApp. Silvia ti risponde di solito entro un'ora.»), ripiego se WhatsApp non si apre (numero da copiare e link email).
+- Nessuna email pubblica (decisione dell'host): chi non usa WhatsApp può chiamare o mandare un SMS allo stesso numero; il modulo offre «Copia il messaggio» per incollarlo dove si preferisce.
+- Stati: verifica dei campi, conferma («Abbiamo preparato il messaggio: invialo da WhatsApp. Silvia ti risponde di solito entro un'ora.»), ripiego se WhatsApp non si apre (messaggio da copiare, numero da chiamare).
 
 Vantaggi:
 
@@ -159,9 +138,9 @@ Il campo trappola e il controllo sul tempo di compilazione non servono più, per
 - **Mappa**: un'immagine statica generata in fase di build da tile OpenStreetMap, con attribuzione. La mappa interattiva si carica solo al clic, dopo un avviso.
 - **Informativa privacy (art. 13)**:
   - titolare: Silvia Bonfigli;
-  - dati trattati: quelli che l'ospite invia via WhatsApp, email o telefono;
+  - dati trattati: quelli che l'ospite invia via WhatsApp, SMS o telefono;
   - basi giuridiche: misure precontrattuali e obblighi di legge;
-  - destinatari: WhatsApp/Meta e il provider email (libero.it), scelti dall'ospite stesso;
+  - destinatari: WhatsApp/Meta (scelto dall'ospite stesso) e il fornitore dell'hosting;
   - tempi di conservazione, diritti dell'interessato, reclamo al Garante.
   
   È una bozza da far validare a un consulente.
@@ -194,7 +173,14 @@ Il campo trappola e il controllo sul tempo di compilazione non servono più, per
 2. **Fase 2 (sistema di design) e apertura della home.** Checkpoint 2: `/styleguide`, logo, screenshot dell'apertura a 390 e 1440 px.
 3. **Fase 3 (resto del sito, verifica, report)**, senza interruzioni.
 
-## 13. Decisioni da prendere (checkpoint 1)
+## 13. Decisioni prese al checkpoint 1
+
+- Stack React per Lovable; modulo via WhatsApp approvato.
+- Telefono +39 347 682 2003 (anche WhatsApp); indirizzo Viale della Vittoria 199, 63822 Porto San Giorgio confermato come indirizzo della casa.
+- Nessuna email sul sito.
+- «Acqua calda» non disponibile è un errore della scheda Airbnb.
+
+### Domande originali
 
 1. **Stack e pubblicazione**: A (Astro statico + Vercel/Netlify, dominio puntato lì), B (Lovable) o C (A con dominio gestito da Lovable)?
 2. **Modulo**: va bene l'invio via WhatsApp/email composto dal browser, senza server?
